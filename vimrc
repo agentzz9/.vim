@@ -186,19 +186,6 @@ set wildmenu
 set ignorecase
 set smartcase
 
+execute pathogen#infect()
 
-"from pathogen.vim docum
-"execute pathogen#infect()
-"syntax on
-"filetype plugin indent on
-
-" Pathogen load
-" filetype off
-
-" call pathogen#infect()
-" call pathogen#helptags()
-
-" filetype plugin indent on
-" syntax on
- "
 
