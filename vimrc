@@ -112,7 +112,7 @@ endif
 packadd matchit
 
 
-" NOW ADDING SOMETHINGS OF MY OWN FROM HERE
+" NOW ADDING SOME THINGS OF MY OWN FROM HERE
 
  noremap <Up> <NOP>
  noremap <Down> <NOP>
@@ -186,6 +186,6 @@ set wildmenu
 set ignorecase
 set smartcase
 
-execute pathogen#infect()
+"execute pathogen#infect()
 
 
