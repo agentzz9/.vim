@@ -123,14 +123,20 @@ set number
 "set relativenumber 
 set foldenable
 
-colorscheme gruvbox
-set background=dark
+" THEME / COLORSCHEME
+"to help gruvbox
+set termguicolors
+colorscheme nova
+"configure transparent background for nova
+let g:nova_transparent = 1
+
+"below setting was for gruvbox
+"set background=dark
 
 
 " little path hack to make vim behave like a fuzzy file searcher
 " basically add child paths recursively to itself...
 "set path+=**
-
 
 set wildmenu
 
@@ -187,7 +193,6 @@ set wildmenu
 
 set ignorecase
 set smartcase
-"to help gruvbox
-set termguicolors
+
 
 
