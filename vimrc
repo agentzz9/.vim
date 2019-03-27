@@ -123,7 +123,9 @@ set number
 "set relativenumber 
 set foldenable
 
-"colorscheme Monakai
+colorscheme gruvbox
+set background=dark
+
 
 " little path hack to make vim behave like a fuzzy file searcher
 " basically add child paths recursively to itself...
@@ -185,7 +187,7 @@ set wildmenu
 
 set ignorecase
 set smartcase
-
-"execute pathogen#infect()
+"to help gruvbox
+set termguicolors
 
 
