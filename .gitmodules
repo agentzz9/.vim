@@ -1,12 +1,3 @@
 [submodule "pack/default/start/.gruvbox"]
 	path = pack/default/start/.gruvbox
 	url = https://github.com/morhetz/gruvbox.git
-[submodule "pack/default/start/gruvbox"]
-	path = pack/default/start/gruvbox
-	url = https://github.com/morhetz/gruvbox.git
-[submodule "pack/default/start/nova-vim"]
-	path = pack/default/start/nova-vim
-	url = https://github.com/trevordmiller/nova-vim.git
-[submodule "pack/default/start/vim-polyglot"]
-	path = pack/default/start/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot.git
