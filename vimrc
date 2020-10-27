@@ -114,10 +114,10 @@ packadd matchit
 
 " NOW ADDING SOME THINGS OF MY OWN FROM HERE
 
- noremap <Up> <NOP>
- noremap <Down> <NOP>
- noremap <Left> <NOP>
- noremap <Right> <NOP>
+" noremap <Up> <NOP>
+" noremap <Down> <NOP>
+" noremap <Left> <NOP>
+" noremap <Right> <NOP>
 " show line numbers  by default...its sad it doesnt :/ so here...
 set number
 "set relativenumber 
@@ -128,6 +128,9 @@ set foldenable
 "set path+=**
 
 set wildmenu
+"set wildmode " not sure what this does but probably need it... TODO check this
+
+set splitbelow splitright " why isnt this default...
 
 " makes tag jumping possible 
 "command! MakeTags !ctags -R .
@@ -178,11 +181,20 @@ set wildmenu
 "set expandtab     " insert spaces when hitting TABs
 "set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
 "set shiftround    " round indent to multiple of 'shiftwidth'
-"set autoindent    " align the new line indent with the previous line
+set autoindent    " align the new line indent with the previous line
 
 " these next two lines are ideal if present in this order...
 set ignorecase
 set smartcase
 " end ignorecase and smartcase...
+
+" here goes nothing , pathogen likes its own bundle directory, however vim8
+" now has pack directory as native package management support and this is how
+" we using it.... initial install done for gruvbox
+execute pathogen#infect('pack/{}')
+
+
+colorscheme gruvbox
+
 
 
