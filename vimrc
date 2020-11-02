@@ -52,6 +52,7 @@ endif
 " Also switch on highlighting the last used search pattern.
 " syntax on isn't really recommended, check and rectify in favour of enable in
 " future...
+
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
@@ -193,8 +194,13 @@ set smartcase
 " we using it.... initial install done for gruvbox
 execute pathogen#infect('pack/{}')
 
-
+" gruvbox says the following 
+let g:gruvbox_italicize_comments=1
+let g:gruvbox_termcolors=256
+let g:gruvbox_contrast_dark='medium'
+let g:gruvbox_italic=1
+set bg=dark
+set t_Co=256 " adding this from wiki on vim to enable 256 colors, trying to get tmux work proporly
 colorscheme gruvbox
-
-
+"set termguicolors
 
