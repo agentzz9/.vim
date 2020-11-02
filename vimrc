@@ -201,6 +201,7 @@ let g:gruvbox_contrast_dark='medium'
 let g:gruvbox_italic=1
 set bg=dark
 set t_Co=256 " adding this from wiki on vim to enable 256 colors, trying to get tmux work proporly
+" .tmux.conf has set -g default-terminal "screen-256color 
 colorscheme gruvbox
 "set termguicolors
 
